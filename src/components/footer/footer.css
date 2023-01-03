@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--grey-2);
+  height: 10em;
+}
+
+.footer__wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  color: var(--beige);
+  font-size: 1em;
+  opacity: 0.5;
+}
+
+.footer__madeby {
+  color: var(--beige);
+  font-size: 0.5em;
+  opacity: 0.5;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer__madeby:hover {
+  text-decoration: underline;
+}
+
+.footer__messengers {
+  display: none;
+}/*# sourceMappingURL=footer.css.map */

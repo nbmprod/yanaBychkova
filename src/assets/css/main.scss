@@ -1,0 +1,42 @@
+@import '../fonts/fonts.css';
+@import './normilize.css';
+@import '../../components/page/page.css';
+@import '../../components/about/about.css';
+@import '../../components/footer/footer.css';
+@import '../../components/header/header.css';
+@import '../../components/navbar/navbar.css';
+@import '../../components/preview/preview.css';
+@import '../../components/service/service.css';
+@import '../../components/signup/signup.css';
+@import '../../components/container/container.css';
+
+
+$grey:#4b4b4b;
+$grey-2:#353535;
+$black:#252525;
+
+$pale-blue:#c4cbda;
+$beige:#dad3c4;
+
+$error:#dab0b0;
+
+:root {
+    --grey: #{$grey};
+    --grey-2: #{$grey-2};
+    --pale-blue:#{$pale-blue};
+    --beige:#{$beige};
+    --black:#{$black};
+
+    --error: #{$error};
+    --success: var(--blue);
+}
+
+* {
+    font-family: 'Unbounded', cursive;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    background-color: var(--beige);
+}
