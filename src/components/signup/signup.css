@@ -71,14 +71,14 @@
 
 @media (max-width: 900px) {
   .signup {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   .signup__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
   }
   .signup__form {
     padding: 0 1em;
@@ -98,6 +98,31 @@
     width: 100%;
   }
   .signup__messengers {
-    display: block;
+    display: flex;
+    gap: 1em;
+  }
+  .signup__button {
+    background: none;
+    background: var(--beige);
+    color: var(--black);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5em 3em;
+    cursor: pointer;
+    transition: background-color 100ms linear, color 100ms linear;
+  }
+  .signup__button:hover {
+    background: var(--black);
+    color: var(--beige);
+    padding: 0.5em 3em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .signup__send {
+    background: var(--black);
+    color: var(--beige);
   }
 }/*# sourceMappingURL=signup.css.map */

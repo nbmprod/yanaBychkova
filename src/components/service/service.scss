@@ -19,11 +19,21 @@
     border-radius: 10px;
 }
 
+.service__sec-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1em;
+}
+
 .service__section{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1em;
+    height: fit-content;
 }
 
 .service__title-box{
@@ -44,14 +54,17 @@
 
 .service__disc{
     color: var(--grey);
+    margin-top: 0.5em;
 }
 
 .service__section-main{
     color: var(--black);
+    margin: 0;
 }
 
 .service__section-value{
     color: var(--black);
+    margin: 0;
 }
 
 @-webkit-keyframes rotating {
