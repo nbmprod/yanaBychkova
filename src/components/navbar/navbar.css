@@ -33,13 +33,14 @@
   font-size: 20px;
   cursor: pointer;
   color: var(--black);
-  transition: border 100ms linear;
-  border: none;
+  transition: border 100ms ease-in;
+  border-bottom: solid 4px transparent;
   background: none;
   box-sizing: border-box;
 }
 .navbar__item:hover {
   border-bottom: solid 4px var(--black);
+  transition: border 100ms ease-in;
 }
 
 .navbar__messengers {
@@ -53,6 +54,7 @@
 .navbar__msg-img {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 1300px) {

@@ -33,6 +33,14 @@
   color: var(--grey);
 }
 
+.about__text_hl {
+  color: var(--grey);
+}
+
+.about__text_workwith-text {
+  color: var(--grey);
+}
+
 @media (max-width: 900px) {
   .about__wrapper {
     display: none;

@@ -20,13 +20,21 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 2em;
 }
 
 .preview__text {
   margin: 0;
   color: var(--black);
+  line-height: 1.5em;
+}
+
+.preview__subtext {
+  margin: 0;
+  color: var(--black);
+  line-height: 1.5em;
 }
 
 @media (max-width: 900px) {
@@ -52,6 +60,12 @@
     gap: 2em;
   }
   .preview__text {
+    font-size: 20px;
+  }
+  .preview__subtext {
+    margin: 0;
+    color: var(--black);
+    line-height: 1.5em;
     font-size: 20px;
   }
 }/*# sourceMappingURL=preview.css.map */

@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
@@ -17,6 +18,7 @@
     padding: 1em;
     border: thick double var(--black);
     border-radius: 10px;
+    width: fit-content;
 }
 
 .service__sec-block{
@@ -96,6 +98,14 @@
 
     .service__img{
         display: none;
+    }
+
+    .service__section{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        gap: em;
+        height: fit-content;
     }
 
 }
