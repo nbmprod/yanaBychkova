@@ -102,85 +102,86 @@ function formValidate(signupForm){
 
 //ACCORDION
 
-class Accordion {
-  constructor(el) {
-    this.el = el;
-    this.summary = el.querySelector('summary');
-    this.content = el.querySelector('.about__accordion-content');
+// class Accordion {
+//   constructor(el) {
+//     this.el = el;
+//     this.summary = el.querySelector('summary');
+//     this.content = el.querySelector('.about__accordion-content');
 
-    this.animation = null;
-    this.isClosing = false;
-    this.isExpanding = false;
-    this.summary.addEventListener('click', (e) => this.onClick(e));
-  }
+//     this.animation = null;
+//     this.isClosing = false;
+//     this.isExpanding = false;
+//     this.summary.addEventListener('click', (e) => this.onClick(e));
+//   }
 
-  onClick(e) {
-    e.preventDefault();
-    this.el.style.overflow = 'hidden';
-    if (this.isClosing || !this.el.open) {
-      this.open();
-    } else if (this.isExpanding || this.el.open) {
-      this.shrink();
-    }
-  }
+//   onClick(e) {
+//     e.preventDefault();
+//     this.el.style.overflow = 'hidden';
+//     if (this.isClosing || !this.el.open) {
+//       this.open();
+//     } else if (this.isExpanding || this.el.open) {
+//       this.shrink();
+//     }
+//   }
 
-  shrink() {
-    this.isClosing = true;
-    const startHeight = `${this.el.offsetHeight}px`;
-    const endHeight = `${this.summary.offsetHeight + 36}px`;
+//   shrink() {
+//     this.isClosing = true;
+//     const startHeight = `${this.el.offsetHeight}px`;
+//     const endHeight = `59.2px`;
 
-    if (this.animation) {
-      this.animation.cancel();
-    }
+//     if (this.animation) {
+//       this.animation.cancel();
+//     }
 
-    this.animation = this.el.animate({
-      height: [startHeight, endHeight]
-    }, {
-      duration: 400,
-      easing: 'ease-out'
-    });
+//     this.animation = this.el.animate({
+//       height: [startHeight, endHeight]
+//     }, {
+//       duration: 400,
+//       easing: 'ease-out'
+//     });
 
-    this.animation.onfinish = () => this.onAnimationFinish(false);
-    this.animation.oncancle = () => this.isClosing = false;
-  }
+//     this.animation.onfinish = () => this.onAnimationFinish(false);
+//     this.animation.oncancle = () => this.isClosing = false;
+//   }
 
-  open() {
-    this.el.style.height = `${this.el.offsetHeight}px`;
-    this.el.open = true;
-    window.requestAnimationFrame(() => this.expand());
-  }
+//   open() {
+//     this.el.style.height = `${this.el.offsetHeight}px`;
+//     this.el.open = true;
+//     window.requestAnimationFrame(() => this.expand());
+//   }
 
-  expand() {
-    this.isExpanding = true;
-    const startHeight = `${this.el.offsetHeight}px`;
-    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight + 70}px`;
+//   expand() {
+//     this.isExpanding = true;
+//     const startHeight = '59.2px';
+//     const endHeight = el.querySelector('.about__accordion-content').height;
+//     console.log(endHeight);
 
-    if (this.animation) {
-      this.animation.cancel();
-    }
+//     if (this.animation) {
+//       this.animation.cancel();
+//     }
 
-    this.animation = this.el.animate({
-      height: [startHeight, endHeight]
-    }, {
-      duration: 400,
-      easing: 'ease-out'
-    });
+//     this.animation = this.el.animate({
+//       height: [startHeight, endHeight]
+//     }, {
+//       duration: 400,
+//       easing: 'ease-out'
+//     });
 
-    this.animation.onfinish = () => this.onAnimationFinish(true);
-    this.animation.oncancel = () => this.isExpanding = false;
-  }
+//     this.animation.onfinish = () => this.onAnimationFinish(true);
+//     this.animation.oncancel = () => this.isExpanding = false;
+//   }
 
-  onAnimationFinish(open) {
-    this.el.open = open;
-    this.animation = null;
-    this.isClosing = false;
-    this.isExpanding = false;
-    this.el.style.height = this.el.style.overflow = '';
-  }
-}
+//   onAnimationFinish(open) {
+//     this.el.open = open;
+//     this.animation = null;
+//     this.isClosing = false;
+//     this.isExpanding = false;
+//     this.el.style.height = this.el.style.overflow = '';
+//   }
+// }
 
-document.querySelectorAll('.about__accordion').forEach((el) => {
-  new Accordion(el);
-});
+// document.querySelectorAll('.about__accordion').forEach((el) => {
+//   new Accordion(el);
+// });
 
 
