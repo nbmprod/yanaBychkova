@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 900px) {
+  .preview {
+    margin-bottom: 3em;
+  }
   .preview__wrapper {
     flex-direction: column;
     justify-content: center;

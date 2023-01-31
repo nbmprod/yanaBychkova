@@ -23,7 +23,7 @@ const signupInput = document.querySelector('.signup__name');
 const signupButton = document.querySelector('.signup__button');
 
 function scrollAbout() {
-  aboutEl.scrollIntoView({behavior: "smooth", block: "center"})
+  aboutEl.scrollIntoView({behavior: "smooth", block: "start"})
 }
 
 function scrollService() {

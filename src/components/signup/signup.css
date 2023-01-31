@@ -108,14 +108,14 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 0.5em 3em;
+    padding: 0.8em 3em;
     cursor: pointer;
     transition: background-color 100ms linear, color 100ms linear;
   }
   .signup__button:hover {
     background: var(--black);
     color: var(--beige);
-    padding: 0.5em 3em;
+    padding: 0.8em 3em;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
