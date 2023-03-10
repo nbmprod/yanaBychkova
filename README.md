@@ -1,4 +1,4 @@
-# Yana Bychkova personal psycologist web page
+# Yana Bychkova personal psychologist web page
 
 ## General Discription
 - general layout;
