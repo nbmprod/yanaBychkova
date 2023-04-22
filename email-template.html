@@ -1,42 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ⚡4email>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp4email-boilerplate>body{visibility:hidden}</style>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-custom>
+    /* inline CSS styles for email */
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+    }
+    td {
+      padding: 10px;
+    }
+    td:first-child {
+      width: 30%;
+      font-weight: bold;
+    }
+    td:last-child {
+      padding-left: 30px;
+    }
+    .carousel {
+      width: 100%;
+      height: 300px;
+      margin-top: 30px;
+    }
+    .carousel-cell {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+      color: #333;
+      font-size: 36px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5em; color: #333; margin: 0; padding: 0;">
-    <table style="width: 100%; max-width: 600px; margin: 0 auto; border-collapse: collapse; background-color: #f9f9f9;">
-      <tbody>
-        <tr>
-          <td style="padding: 20px;">
-            <h1 style="margin-top: 0;">Новая запись!</h1>
-            <p style="margin-bottom: 30px;">Яна, моя дорога, у вас новая запись. Вот детали:</p>
-            <table style="width: 100%; border-collapse: collapse;">
-              <tbody>
-                <tr>
-                  <td style="width: 30%; padding: 10px; font-weight: bold;">Имя:</td>
-                  <td style="padding: 10px;">{{name}}</td>
-                </tr>
-                <tr>
-                  <td style="width: 30%; padding: 10px; font-weight: bold;">Телефон:</td>
-                  <td style="padding: 10px;">{{tel}}</td>
-                </tr>
-                <tr>
-                    <td style="width: 30%; padding: 10px; font-weight: bold;">Доп. информация:</td>
-                    <td style="padding: 10px;">{{extra}}</td>
-                  </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 20px; background-color: #eee; text-align: center;">
-            2023 Психолог Яна Бычкова. Все права защищены.
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <h1>Новая запись!</h1>
+          <p>Яна, моя дорога, у вас новая запись. Вот детали:</p>
+          <table>
+            <tbody>
+              <tr>
+                <td>Имя:</td>
+                <td>{{name}}</td>
+              </tr>
+              <tr>
+                <td>Телефон:</td>
+                <td>{{tel}}</td>
+              </tr>
+              <tr>
+                <td>Доп. информация:</td>
+                <td>{{extra}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="carousel">
+            <amp-carousel width="400" height="300" layout="responsive" type="slides">
+              <div class="carousel-cell">Slide 1</div>
+              <div class="carousel-cell">Slide 2</div>
+              <div class="carousel-cell">Slide 3</div>
+            </amp-carousel>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #eee; text-align: center;">
+          2023 Психолог Яна Бычкова. Все права защищены.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 </html>
