@@ -57,12 +57,12 @@
   cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1480px) {
   .navbar__messengers {
     flex-direction: column;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .navbar {
     margin-bottom: 1em;
   }

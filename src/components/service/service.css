@@ -79,7 +79,7 @@
   -webkit-animation: rotating 3s linear infinite;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .service__wrapper {
     padding: 0 1em;
   }

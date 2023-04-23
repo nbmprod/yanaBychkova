@@ -30,6 +30,9 @@
     color: var(--black);
     line-height: 1.5em;
     font-weight: 500;
+    text-align: start;
+    width: 100%;
+    font-size: 1.7em;
 }
 
 .preview__subtext{
@@ -37,12 +40,13 @@
     color: var(--black);
     line-height: 1.5em;
     font-weight: 500;
-    // font-size: 1.4em;
-    // font-style: italic;
+    text-align: start;
+    width: 100%;
+    font-size: 1.7em;
 }
 
 //MOBILE
-@media (max-width: 900px){
+@media (max-width: 1200px){
     .preview{
         margin-bottom: 3em;
     }
