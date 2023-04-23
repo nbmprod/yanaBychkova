@@ -18,7 +18,6 @@
   padding: 1em 1em 1.5em 1em;
   border: thick double var(--black);
   border-radius: 10px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   gap: 1.5em;
@@ -37,7 +36,6 @@
   flex-direction: row;
   align-items: center;
   gap: 1em;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -68,7 +66,7 @@
   margin: 0;
 }
 
-@-webkit-keyframes rotating {
+@keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -77,10 +75,11 @@
   }
 }
 .service__block:hover > .service__title-box .service__img {
+  animation: rotating 3s linear infinite;
   -webkit-animation: rotating 3s linear infinite;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .service__wrapper {
     padding: 0 1em;
   }
@@ -104,7 +103,6 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

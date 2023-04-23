@@ -71,6 +71,15 @@
     margin: 0;
 }
 
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 @-webkit-keyframes rotating {
     from{
         -webkit-transform: rotate(0deg);
@@ -81,11 +90,12 @@
 }
 
 .service__block:hover > .service__title-box .service__img {
+    animation: rotating 3s linear infinite;
     -webkit-animation: rotating 3s linear infinite;
 }
 
 //MOBILE
-@media (max-width: 900px){
+@media (max-width: 1200px){
     .service__wrapper{
         padding: 0 1em;
     }

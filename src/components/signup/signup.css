@@ -20,7 +20,6 @@
   background: none;
   border: solid 3px var(--black);
   color: var(--black);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5em 2em;
@@ -30,7 +29,6 @@
 .signup__button:hover {
   background: var(--black);
   color: var(--beige);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5em 2em;
@@ -105,7 +103,6 @@
     background: none;
     background: var(--beige);
     color: var(--black);
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0.8em 3em;
@@ -116,7 +113,6 @@
     background: var(--black);
     color: var(--beige);
     padding: 0.8em 3em;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;

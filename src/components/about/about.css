@@ -41,7 +41,21 @@
   color: var(--grey);
 }
 
-@media (max-width: 900px) {
+.about__text_workwith-audience {
+  display: block;
+  margin: 2em 0 1em 0;
+  padding: 1em;
+  color: var(--black);
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  border: 3px dashed;
+  line-height: 1.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 1200px) {
   .about__wrapper {
     display: none;
   }
@@ -63,7 +77,6 @@
     margin: 0;
   }
   .about__accordion[open] {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 1em 2em;
@@ -106,5 +119,14 @@
     line-height: 24px;
     letter-spacing: 0em;
     margin: 1em 0;
+  }
+  .about__text_workwith-audience {
+    display: block;
+    padding: 0.7em;
+    color: var(--black);
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    border: 3px dashed;
   }
 }/*# sourceMappingURL=about.css.map */
