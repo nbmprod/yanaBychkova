@@ -1,89 +1,271 @@
 <!DOCTYPE html>
-<html ⚡4email>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <style amp4email-boilerplate>body{visibility:hidden}</style>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <style amp-custom>
-    /* inline CSS styles for email */
-    h1 {
-      font-size: 24px;
-      margin-top: 0;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .email__feedback-btn:hover {
+      outline: 2px solid black;
     }
-    table {
-      border-collapse: collapse;
+
+    .email__feedback-input:checked ~ .email__feedback-btn {
+      background-color: #333;
+    }
+
+    </style>
+    <title>Email</title>
+</head>
+<body class="email__body" style="font-family: Arial, sans-serif;font-size: 16px;line-height: 1.5em;color: #333;margin: 0;padding: 0;">
+    <table class="email__container" style="width: 100%;max-width: 600px;margin: 0 auto;border-collapse: collapse;background-color: #f9f9f9;">
+      <tbody>
+        <tr>
+          <td class="email__header" style="padding: 20px;">
+            <h1 class="email__title" style="margin-top: 0;">Новая запись!</h1>
+            <p class="email__subtitle" style="margin-bottom: 30px;">Яна, моя дорога, у вас новая запись. Вот детали:</p>
+            <table class="email__content" style="width: 100%;border-collapse: collapse;">
+              <tbody>
+                <tr>
+                  <td class="email__label" style="width: 30%;padding: 10px;font-weight: bold;">Имя:</td>
+                  <td class="email__value" style="padding: 10px;">{{name}}</td>
+                </tr>
+                <tr>
+                  <td class="email__label" style="width: 30%;padding: 10px;font-weight: bold;">Телефон:</td>
+                  <td class="email__value" style="padding: 10px;">{{tel}}</td>
+                </tr>
+                <tr>
+                    <td class="email__label" style="width: 30%;padding: 10px;font-weight: bold;">Доп. информация:</td>
+                    <td class="email__value" style="padding: 10px;">{{extra}}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="email__feedback" style="padding: 20px;text-align: center;">
+            <table class="email__feedback-table" style="width: 100%;">
+              <tbody>
+                <tr>
+                  <td>
+                    <h3>Оцените наше приложение:</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <form class="email__feedback-form" method="post" action="#" style="margin-top: 20px;">
+                      <table class="email__button-table" style="margin: 0 auto;">
+                        <tbody>
+                          <tr>
+                            <td style="padding: 10px;">
+                              <input class="email__feedback-input" type="radio" id="star5" name="rating" value="2" style="clip: rect(0, 0, 0, 0);position: absolute;outline: none;padding: 0;">
+                              <label class="email__feedback-btn" for="star5" title="Excellent" style="cursor: pointer;font-size: 36px;">&#x1F918;</label>
+                            </td>
+                            <td style="padding: 10px;">
+                              <input class="email__feedback-input" type="radio" id="star4" name="rating" value="1" style="clip: rect(0, 0, 0, 0);position: absolute;outline: none;padding: 0;">
+                              <label class="email__feedback-btn" for="star4" title="Average" style="cursor: pointer;font-size: 36px;">&#x1F914;</label>
+                            </td>
+                            <td style="padding: 10px;">
+                              <input class="email__feedback-input" type="radio" id="star3" name="rating" value="0" style="clip: rect(0, 0, 0, 0);position: absolute;outline: none;padding: 0;">
+                              <label class="email__feedback-btn" for="star3" title="Bad" style="cursor: pointer;font-size: 36px;">&#x1F44E;</label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a class="email__feedback-submit" href="https://yanabychkova.com/" style="margin: 0 auto; padding: 5px 10px; border: 2px solid #333; text-decoration: none; color: #333;">Submit</button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+          <td class="email__footer" style="padding: 20px;background-color: #eee;text-align: center;">
+            2023 Психолог Яна Бычкова. Все права защищены.
+          </td>
+        
+      </tbody>
+    </table>
+  </body>
+
+</html> 
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body class="email__body">
+    <table class="email__container">
+      <tbody>
+        <tr>
+          <td class="email__header">
+            <h1 class="email__title">Новая запись!</h1>
+            <p class="email__subtitle">Яна, моя дорога, у вас новая запись. Вот детали:</p>
+            <table class="email__content">
+              <tbody>
+                <tr>
+                  <td class="email__label">Имя:</td>
+                  <td class="email__value">{{name}}</td>
+                </tr>
+                <tr>
+                  <td class="email__label">Телефон:</td>
+                  <td class="email__value">{{tel}}</td>
+                </tr>
+                <tr>
+                    <td class="email__label">Доп. информация:</td>
+                    <td class="email__value">{{extra}}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="email__feedback">
+            <table class="email__feedback-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <h3>Оцените наше приложение:</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <form class="email__feedback-form" method="post" action="https://yanabychkova.com/">
+                      <table class="email__button-table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input class="email__feedback-input" type="radio" id="star5" name="rating" value="2">
+                              <label class="email__feedback-btn" for="star5" title="Excellent">&#x1F918;</label>
+                            </td>
+                            <td>
+                              <input class="email__feedback-input" type="radio" id="star4" name="rating" value="1">
+                              <label class="email__feedback-btn" for="star4" title="Average">&#x1F914;</label>
+                            </td>
+                            <td>
+                              <input class="email__feedback-input" type="radio" id="star3" name="rating" value="0">
+                              <label class="email__feedback-btn" for="star3" title="Bad">&#x1F44E;</label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="submit" class="email__feedback-submit">Submit</button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+          <td class="email__footer">
+            2023 Психолог Яна Бычкова. Все права защищены.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+  <style>
+    .email__body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5em;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .email__container {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
+      border-collapse: collapse;
       background-color: #f9f9f9;
     }
-    td {
+    
+    .email__header {
+      padding: 20px;
+    }
+    
+    .email__title {
+      margin-top: 0;
+    }
+    
+    .email__subtitle {
+      margin-bottom: 30px;
+    }
+    
+    .email__content {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .email__label {
+      width: 30%;
+      padding: 10px;
+      font-weight: bold;
+    }
+    
+    .email__value {
       padding: 10px;
     }
-    td:first-child {
-      width: 30%;
-      font-weight: bold;
+
+    .email__feedback {
+    padding: 20px;
+    text-align: center;
     }
-    td:last-child {
-      padding-left: 30px;
-    }
-    .carousel {
+
+    .email__feedback-table {
       width: 100%;
-      height: 300px;
-      margin-top: 30px;
     }
-    .carousel-cell {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #eee;
-      color: #333;
+
+    .email__feedback-form {
+      margin-top: 20px;
+    }
+
+    .email__button-table {
+      margin: 0 auto;
+    }
+
+    .email__button-table td {
+      padding: 10px;
+    }
+
+    .email__feedback-btn {
+      cursor: pointer;
       font-size: 36px;
-      font-weight: bold;
+    }
+    
+
+    .email__feedback-btn:hover {
+      outline: 2px solid black;
+    }
+
+    .email__feedback-input{
+      clip: rect(0, 0, 0, 0);
+      position: absolute;
+      outline: none;
+      padding: 0;
+    }
+
+    .email__feedback-input:checked ~ .email__feedback-btn {
+      background-color: #333;
+    }
+
+    .email__feedback-submit {
+      margin: 20px auto 0;
+    }
+    
+    .email__footer {
+      padding: 20px;
+      background-color: #eee;
+      text-align: center;
     }
   </style>
-</head>
-<body>
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <h1>Новая запись!</h1>
-          <p>Яна, моя дорога, у вас новая запись. Вот детали:</p>
-          <table>
-            <tbody>
-              <tr>
-                <td>Имя:</td>
-                <td>{{name}}</td>
-              </tr>
-              <tr>
-                <td>Телефон:</td>
-                <td>{{tel}}</td>
-              </tr>
-              <tr>
-                <td>Доп. информация:</td>
-                <td>{{extra}}</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="carousel">
-            <amp-carousel width="400" height="300" layout="responsive" type="slides">
-              <div class="carousel-cell">Slide 1</div>
-              <div class="carousel-cell">Slide 2</div>
-              <div class="carousel-cell">Slide 3</div>
-            </amp-carousel>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td style="background-color: #eee; text-align: center;">
-          2023 Психолог Яна Бычкова. Все права защищены.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-</html>
+
+
+</html>  -->

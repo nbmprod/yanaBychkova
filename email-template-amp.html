@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html ⚡4email data-css-strict>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp4email-boilerplate>body{visibility:hidden}</style>
+    <title>Email</title>
+</head>
+<body class="email__body">
+    <table class="email__container">
+      <tbody>
+        <tr>
+          <td class="email__header">
+            <h1 class="email__title">Новая запись!</h1>
+            <p class="email__subtitle">Яна, моя дорога, у вас новая запись. Вот детали:</p>
+            <table class="email__content">
+              <tbody>
+                <tr>
+                  <td class="email__label">Имя:</td>
+                  <td class="email__value">{{name}}</td>
+                </tr>
+                <tr>
+                  <td class="email__label">Телефон:</td>
+                  <td class="email__value">{{tel}}</td>
+                </tr>
+                <tr>
+                    <td class="email__label">Доп. информация:</td>
+                    <td class="email__value">{{extra}}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="email__feedback">
+            <table class="email__feedback-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <h3>Оцените наше приложение:</h3>
+                    <amp-form class="email__feedback-form" method="post" action-xhr="https://your-feedback-server.com/submit-feedback">
+                      <amp-selector class="email__button-group" layout="container">
+                        <div class="email__feedback-btn" option="1" aria-selected="false">&#x1F918;</div>
+                        <div class="email__feedback-btn" option="2" aria-selected="false">&#x1F914;</div>
+                        <div class="email__feedback-btn" option="3" aria-selected="false">&#x1F44E;</div>
+                      </amp-selector>
+                      <button type="submit" class="email__feedback-submit">Submit</button>
+                    </amp-form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="email__footer">
+            2023 Психолог Яна Бычкова. Все права защищены.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+<style amp-custom>
+  .email__body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .email__container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+  }
+  
+  .email__header {
+    padding: 20px;
+  }
+  
+  .email__title {
+    margin-top: 0;
+  }
+  
+  .email__subtitle {
+    margin-bottom: 30px;
+  }
+  
+  .email__content {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .email__label {
+    width: 30%;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .email__value {
+    padding: 10px;
+  }
+  
+  .email__feedback {
+  padding: 20px;
+  text-align: center;
+  
+  }
+
+  .email__feedback-table{
+    margin: 0 auto;
+  }
+
+  .email__feedback-form {
+    display: inline-block;
+  }
+
+  .email__button-group {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #333;
+  }
+
+  .email__feedback-btn {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .email__feedback-btn:hover {
+    outline: none;
+  }
+
+  .email__feedback-btn[selected] {
+    background-color:aquamarine;
+    outline: none!important;
+  }
+
+  .email__feedback-submit {
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .email__footer {
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+  } 
+
+  </style>
+
+
+</html>
