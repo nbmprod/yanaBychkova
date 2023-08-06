@@ -4,7 +4,7 @@
 
 .preview__pic_main{
     width: 500px;
-    height: 500px;
+   
     border-radius: 10px;
 }
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 0.5em;
 }
 
 .preview__text{
@@ -32,7 +32,7 @@
     font-weight: 500;
     text-align: start;
     width: 100%;
-    font-size: 1.7em;
+    font-size: 24px;
 }
 
 .preview__subtext{
@@ -42,7 +42,7 @@
     font-weight: 500;
     text-align: start;
     width: 100%;
-    font-size: 1.7em;
+    font-size: 24px;
 }
 
 //MOBILE

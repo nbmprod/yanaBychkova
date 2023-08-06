@@ -25,6 +25,8 @@
   padding: 0.5em 2em;
   cursor: pointer;
   transition: background-color 100ms linear, color 100ms linear;
+  font-weight: bold;
+  font-size: 18px;
 }
 .signup__button:hover {
   background: var(--black);
@@ -33,6 +35,10 @@
   width: fit-content;
   padding: 0.5em 2em;
   cursor: pointer;
+}
+
+.preview__signup.signup__button {
+  margin-top: 1em;
 }
 
 .signup__title {

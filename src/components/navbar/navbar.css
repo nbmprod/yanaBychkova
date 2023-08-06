@@ -15,10 +15,11 @@
 .navbar__title {
   margin: 0;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 28px;
   color: var(--black);
   border: none;
   background: none;
+  font-family: "Merriweather", serif;
 }
 
 .navbar__nav {
@@ -30,7 +31,7 @@
 .navbar__item {
   margin: 0;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
   color: var(--black);
   transition: border 100ms ease-in;
