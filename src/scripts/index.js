@@ -1,15 +1,3 @@
-//TEL MASK
-
-import IMask from "imask";
-
-let phoneMask = document.querySelector('.signup__tel');
-let maskOptions = {
-    mask: '+{7}(000)000-00-00'
-  };
-let mask = IMask(phoneMask, maskOptions);
-
-phoneMask.value = mask.value;
-
 //SCROLL
 
 const aboutEl = document.querySelector('.about');
