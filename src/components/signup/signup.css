@@ -37,6 +37,28 @@
   cursor: pointer;
 }
 
+.signup__button_about {
+  font-size: 16px;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.2em;
+  align-items: center;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  background-color: var(--pinky);
+}
+.signup__button_about:hover {
+  opacity: 0.7;
+  background-color: var(--pinky);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+}
+
 .preview__signup.signup__button {
   margin-top: 1em;
 }
@@ -119,6 +141,17 @@
     background: var(--black);
     color: var(--beige);
     padding: 0.8em 3em;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .signup__button_mob {
+    padding: 0.1em 0.4em;
+  }
+  .signup__button_mob:hover {
+    background: var(--black);
+    color: var(--beige);
+    padding: 0.1em 0.4em;
     width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;

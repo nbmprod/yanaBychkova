@@ -1,3 +1,9 @@
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+//FANCYBOX
+Fancybox.bind("[data-fancybox]", {});
+
 //SCROLL
 
 const aboutEl = document.querySelector('.about');

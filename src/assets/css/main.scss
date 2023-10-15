@@ -17,6 +17,7 @@ $black:#252525;
 
 $pale-blue:#c4cbda;
 $beige:#dad3c4;
+$pinky: #a7f9f5;
 
 $error:#dab0b0;
 
@@ -26,6 +27,7 @@ $error:#dab0b0;
     --pale-blue:#{$pale-blue};
     --beige:#{$beige};
     --black:#{$black};
+    --pinky:#{$pinky};
 
     --error: #{$error};
     --success: var(--blue);

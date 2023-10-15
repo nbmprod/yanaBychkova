@@ -105,6 +105,10 @@
   background-color: var(--beige);
 }
 
+.about__edu-icon {
+  width: 0.7em;
+}
+
 @media (max-width: 1200px) {
   .about__wrapper {
     display: none;
