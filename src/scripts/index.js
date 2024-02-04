@@ -1,8 +1,13 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 //FANCYBOX
 Fancybox.bind("[data-fancybox]", {});
+
+//AOS
+AOS.init();
 
 //SCROLL
 

@@ -18,6 +18,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.22"
+    "@fancyapps/ui": "^5.0.22",
+    "aos": "^3.0.0-beta.6"
   }
 }
