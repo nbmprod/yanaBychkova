@@ -5,7 +5,7 @@
         return "From: $encodedName <$email>\r\n";
     }
 
-    $to = 'admin@yanabychkova.com, bychkovnm@gmail.com, nikita7272727272@yandex.ru, bychkovnmo@outlook.com';
+    $to = 'artehina@bk.ru';
     $subject = 'Новая запись!';
     $name = $_POST['name'];
     $tel = $_POST['tel'];
